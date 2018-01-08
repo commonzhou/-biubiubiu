@@ -1,3 +1,4 @@
+```C++
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -15,5 +16,6 @@ public:
         }
     }
 };
+```
 
 链表找环，使用快慢指针，若有环，二者必将相遇，此乃套路也
