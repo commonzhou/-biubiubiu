@@ -23,3 +23,15 @@ public:
 ```
 
 #### 常规题目，注意p q取数值之前，要判断其空不空！ 然后递归左右孩子。
+#### 下面这个写法，天秀啊，牛逼，省事
+```c++
+class Solution {
+public:
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        if(p==NULL || q==NULL) return {p==q};
+        else{
+            return (p->val==q->val)&&(isSameTree(p->left,q->left))&&(isSameTree(p->right,q->right));
+        }
+    }
+};
+```
